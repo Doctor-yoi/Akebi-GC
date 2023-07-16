@@ -18,7 +18,7 @@
 
 ## 稳定版本
 1. 前往[Releases](https://github.com/Akebi-Group/Akebi-GC/releases)頁面
-1. 下载最新的版本
+1. 下最新的版本
 
 ## 最新版本
 1. 前往[Action](https://github.com/Akebi-Group/Akebi-GC/actions)介面
