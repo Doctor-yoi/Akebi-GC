@@ -1330,11 +1330,6 @@
       <Command>
       </Command>
     </PostBuildEvent>
-    <CustomBuildStep>
-      <Command>"echo 0000"</Command>
-      <Outputs>$(OutDir)_noexist.nope;%(Outputs)</Outputs>
-      <Inputs>$(TargetPath);%(Inputs)</Inputs>
-    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -1366,11 +1361,6 @@
       <AdditionalDependencies>cheat-base.lib;ntdll.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
     </Link>
-    <CustomBuildStep>
-      <Command>"echo 0000"</Command>
-      <Outputs>$(OutDir)_noexist.nope;%(Outputs)</Outputs>
-      <Inputs>$(TargetPath);%(Inputs)</Inputs>
-    </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_WS|x64'">
     <ClCompile>
