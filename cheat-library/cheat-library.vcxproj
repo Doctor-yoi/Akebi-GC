@@ -1405,12 +1405,6 @@ powershell -nop -c "&amp; {sleep 15}"</Command>
       <AdditionalDependencies>cheat-base.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
     </Link>
-    <CustomBuildStep>
-      <Command>"$(OutDir)injector.exe"
-powershell -nop -c "&amp; {sleep 15}"</Command>
-      <Outputs>$(OutDir)_noexist.nope;%(Outputs)</Outputs>
-      <Inputs>$(TargetPath);%(Inputs)</Inputs>
-    </CustomBuildStep>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
